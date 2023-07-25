@@ -15,7 +15,7 @@ Follow these steps to set up the React Course Web App:
 
 1. Clone the repository to your local machine.
    ```bash
-   git clone https://github.com/your-username/react-course-web-app.git
+   git clone https://github.com/ramkumar-ark/talentBoxAssignmentFrontEnd.git
    cd talentBoxAssignmentFrontEnd
    ```
 2. Install the required dependencies using npm (Node Package Manager).
