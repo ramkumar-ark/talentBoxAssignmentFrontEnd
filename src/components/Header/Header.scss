@@ -1,0 +1,150 @@
+@use '../../sass/abstracts/variables' as variables;
+
+.header-main {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 150;
+
+    &__nav {
+        align-items: flex-start;
+        background: variables.$theme-color;
+        color: variables.$gray-00;
+        display: flex;
+        font-size: variables.$fontSize-default;
+        height: variables.$header-height;
+        justify-content: space-between;
+        padding: 0 15px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+
+        @media (max-width: 450px) {
+            padding: 0 5px;
+        }
+    }
+
+    &__logo-holder {
+        align-items: center;
+        max-inline-size: max-content;
+        overflow: hidden;
+        padding-top: 0.36rem;
+        display: flex;
+
+        @media (min-width: 980px) {
+            margin-inline: 1.8rem;
+            padding-top: 0;
+            height: 100%;
+        }
+    }
+
+    &__nav-options {
+        display: flex;
+        flex: 1 0 auto;
+        gap: 10px;
+        height: variables.$header-height;
+        justify-content: flex-end;
+        align-items: center;
+
+        @media (min-width: 980px) {
+            flex: 1 0 33%;
+        }
+    }
+
+    &__nav-search-bar {
+        display: none;
+        @media (min-width: 980px) {
+            display: flex;
+            flex: 1 0 33%;
+            height: 100%;
+            align-items: center;
+        }
+    }
+
+    &__input-search-box {
+        height: 30px;
+        flex-grow: 1;
+        position: relative;
+        display: flex;
+        align-items: center;
+        @media (min-width: 980px) {
+            max-width: 500px;   
+        }
+        &:focus {
+            outline: 3px solid var(--focus-outline-color) !important;
+        }
+        input {
+            top: auto;
+            position: relative;
+            height: 100%;
+            width: 100%;
+            background-color: variables.$gray-75;
+            color: variables.$gray-00;
+            font-size: 18px;
+            border: 0;
+            padding-left: 10px;
+            &:focus-visible {
+                outline: 0;
+            }
+            
+            &::placeholder {
+                color: variables.$gray-00;;    
+            }
+           
+        }
+    }
+
+    &__globeIcon {
+        align-items: center;
+        background-color: variables.$theme-color;
+        border: 1px solid variables.$gray-00;
+        color: variables.$gray-00;
+        cursor: pointer;
+        padding: 1px;
+        display: flex;
+        font-size: 1.8rem;
+        max-height: calc(variables.$header-height - 8px);
+        height: auto;
+        width: 3.6rem;
+
+        &:hover {
+            background-color: variables.$gray-00;
+            border: 1px solid variables.$gray-00;
+            color: variables.$theme-color;
+        }
+    }
+
+    &__button {
+        padding: 4px 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        font-size: 1.8rem;
+        max-height: calc(variables.$header-height - 8px);
+        font-family: inherit;
+
+
+        &--normal {
+            background-color: variables.$theme-color;
+            border: 1px solid variables.$gray-00;
+            color: variables.$gray-00;
+
+            &:hover {
+                background-color: variables.$gray-00;
+                color: variables.$theme-color;
+            }
+        }
+
+        &--gold {
+            background-color: variables.$yellow40;
+            border: 3px solid variables.$yellow50;
+            color: var(--foreground-primary);
+
+            &:hover {
+                background-color: variables.$yellow10;
+            }
+        }
+    }
+}

@@ -1,0 +1,112 @@
+// BASE COLORS
+$gray00: #fff;
+$gray05: #f5f6f7;
+$gray10: #dfdfe2;
+$gray15: #d0d0d5;
+$gray45: #858591;
+$gray75: #3b3b4f;
+$gray80: #2a2a40;
+$gray85: #1b1b32;
+$gray90: #0a0a23;
+$purple10: #dbb8ff;
+$purple50: #9400d3;
+$purple90: #5a01a7;
+$yellow05: #fcf8e3;
+$yellow10: #faebcc;
+$yellow40: #ffc300;
+$yellow45: #ffbf00;
+$yellow50: #f1be32;
+$yellow70: #8a6d3b;
+$yellow90: #4d3800;
+$blue05: #d9edf7;
+$blue10: #bce8f1;
+$blue30: #99c9ff;
+$blue50: #198eee;
+$blue70: #31708f;
+$blue90: #002ead;
+$green05: #dff0d8;
+$green10: #d6e9c6;
+$green40: #acd157;
+$green70: #3c763d;
+$green90: #00471b;
+$red05: #f2dede;
+$red10: #ebccd1;
+$red15: #ffadad;
+$red30: #f8577c;
+$red70: #a94442;
+$red80: #f82153;
+$red90: #850000;
+
+$theme-color: #0a0a23;
+$yellow-gold: #ffbf00;
+$gray-00: #fff;
+$gray-05: #f5f6f7;
+$gray-10: #dfdfe2;
+$gray-15: #d0d0d5;
+$gray-45: #858591;
+$gray-75: #3b3b4f;
+$gray-80: #2a2a40;
+$gray-85: #1b1b32;
+$gray-90: #0a0a23;
+$purple-light: #dbb8ff;
+$purple-dark: #5a01a7;
+$yellow-light: #ffc300;
+$yellow-dark: #4d3800;
+$blue-light: #99c9ff;
+$blue-light-translucent: rgba(153,201,255,.3);
+$blue-dark: #002ead;
+$blue-dark-translucent: rgba(0,46,173,.3);
+$green-light: #acd157;
+$blue-mid: #198eee;
+$purple-mid: #9400d3;
+$green-dark: #00471b;
+$red-light: #ffadad;
+$red-dark: #850000;
+$love-light: #f8577c;
+$love-dark: #f82153;
+$editor-background-light: #fffffe;
+$editor-background-dark: #2a2b40;
+$focus-outline-color: $blue-mid;
+$font-family-sans-serif: "Lato",sans-serif;
+$font-family-monospace: "Hack-ZeroSlash",monospace;
+
+// THEME COLORS
+
+.light-theme {
+    --foreground-primary: #{$gray90};
+    --foreground-secondary: #{$gray85};
+    --foreground-tertiary: #{$gray80};
+    --foreground-quaternary: #{$gray75};
+    --foreground-danger: #{$red15};
+    --foreground-info: #{$blue30};
+    --foreground-warning: #{$yellow45};
+    --background-primary: #{$gray00};
+    --background-secondary: #{$gray05};
+    --background-tertiary: #{$gray10};
+    --background-quaternary: #{$gray15};
+    --background-danger: #{$red90};
+    --background-info: #{$blue90};
+    --focus-outline-color: #{$blue50};
+    --primary-color: #{$gray-90};
+    --secondary-color: #{$gray-85};
+    --tertiary-color: #{$gray-80};
+    --quaternary-color: #{$gray-75};
+    --quaternary-background: #{$gray-15};
+    --tertiary-background: #{$gray-10};
+    --secondary-background: #{$gray-05};
+    --primary-background: #{$gray-00};
+    --highlight-color: #{$blue-dark};
+    --highlight-background: #{$blue-light};
+    --selection-color: #{$blue-dark-translucent};
+    --success-color: #{$green-dark};
+    --success-background: #{$green-light};
+    --danger-color: #{$red-dark};
+    --danger-background: #{$red-light};
+    --love-color: #{$love-dark};
+    --editor-background: #{$editor-background-light};
+}
+
+// typography
+
+$fontSize-default: 1.6rem;
+$header-height: 38px;

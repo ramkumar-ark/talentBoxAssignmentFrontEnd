@@ -1,0 +1,44 @@
+.btn {
+    white-space: pre-line;
+    
+    &--cta {
+        background-color: #feac32;
+        background-image: linear-gradient(#fecc4c,#ffac33);
+        border-color: #feac32;
+        border-width: 3px;
+        color: var(--foreground-primary)!important;
+        @media (max-width: 500px) {
+            font-size: 1.6rem;
+        }
+
+        &:active:hover,&:focus,&:hover {
+            background-color: #fecc4c!important;
+            background-image: none;
+            border-color: #f1a02a;
+            border-width: 3px;
+            color: var(--foreground-primary)!important;
+        }
+
+        &:active {
+            background-image: none;
+            box-shadow: inset 0 1px 4px rgba(0,0,0,.3)
+        }
+
+        &--big {
+            font-size: 2.4rem;
+            margin: 15px auto 0;
+            max-height: 100%;
+            max-width: 500px;
+            padding: 5px;
+            white-space: normal;
+            width: 100%;
+            @media (max-width: 500px) {
+                font-size: 1.6rem;
+            }
+            @media (max-width: 1200px) {
+                font-size: 2rem;
+            }
+        }
+    }
+
+}
