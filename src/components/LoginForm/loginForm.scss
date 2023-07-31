@@ -1,0 +1,59 @@
+@use '../../sass/abstracts/variables' as variables;
+
+.login-form {
+    border: 3px solid var(--foreground-primary);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: auto;
+    background-color: var(--background-primary);
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        font-weight: 400;
+        margin-bottom: 40px;
+        
+        svg{
+            height: 40px;
+            width: auto;
+            margin-bottom: 30px;
+            color: var(--background-primary);
+            background-color: var(--foreground-primary);
+        }
+    }
+
+    &__google-login {
+        padding: 5px 15px;
+        border: 3px solid variables.$gray-45;
+        margin-bottom: 25px;
+        img {
+            margin-right: 10px;
+        }
+    }
+
+    &__form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        form {
+            width: 75%;
+        }
+        input {
+            display: block;
+            margin: 2rem 0;
+            height: 40px;
+            padding-left: 10px;
+            width: 100%;
+        }
+    }
+
+    p {
+        margin: 20px 0 0;
+        text-align: center;
+    }
+
+}
